@@ -1,0 +1,5 @@
+rootProject.name = 'prime-number-selector'
+
+includeBuild 'producer'
+includeBuild 'consumer'
+

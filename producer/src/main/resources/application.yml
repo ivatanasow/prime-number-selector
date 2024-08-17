@@ -1,0 +1,8 @@
+server:
+  servlet:
+    context-path: /producer
+spring:
+  application:
+    name: producer
+  profiles:
+    active: dev

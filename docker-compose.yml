@@ -1,0 +1,19 @@
+services:
+  producer:
+    build:
+      context: producer
+    ports:
+      - "8080:8080"
+    depends_on:
+      - kafka
+  consumer:
+    build:
+      context: consumer
+    ports:
+      - "8081:8080"
+    depends_on:
+      - kafka
+  kafka:
+    image: apache/kafka:latest
+    ports:
+      - "9092:9092"
